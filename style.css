@@ -1,0 +1,173 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.main{
+    background-color: #4a8f9f2e;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 19px rgba(167, 164, 164, 0.97);
+    border-radius: 10px;
+    padding: 15px;
+    width: 70vw;
+    margin:25px;
+    flex-grow: 1;
+}
+.container h2{
+    text-align: center;
+    margin: 10px;
+    font-family: cursive;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.box{
+    width: 100%;
+    overflow-x: auto;
+}
+.table{
+    position: relative;
+    padding-bottom: 2px;
+    background-color: black;
+    width: fit-content;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-bottom: 13px;
+    margin-top: 16px;
+    border-radius: 7px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 2px;
+    padding-bottom: 0px;
+}
+#RowX span:nth-child(1) {
+    border-radius: 5px 0px 0px 0px;
+}
+#RowX span:nth-last-child(1){
+    border-radius: 0px 5px 0px 0px;
+}
+#RowY span:nth-child(1) {
+    border-radius: 0px 0px 0px 5px;
+}
+#RowY span:nth-last-child(1){
+    border-radius: 0px 0px 5px 0px;
+}
+.row span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height:36px;
+    background-color: white;
+}
+.row span input{
+    border:0px;
+    outline: 0px;
+    width: 95%;
+    padding-left: 7px;
+    height: 100%;
+}
+.addTab{
+    position: absolute;
+    top:10px;
+    right: -30px;
+}
+#atab{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(19, 186, 19);
+    color: white;
+    border: 2px solid rgb(19, 186, 19);
+    box-shadow: 0px 0px 5px rgba(179, 176, 176, 0.532);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s linear;
+}
+#atab:hover{
+    background-color: white;
+    color: rgb(19, 186, 19);
+}
+.deleteTab{
+    position: absolute;
+    bottom:10px;
+    right: -30px;
+}
+#dtab{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(186, 19, 19);
+    color: white;
+    border: 2px solid rgb(186, 19, 19);
+    box-shadow: 0px 0px 5px rgba(179, 176, 176, 0.532);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s linear;
+}
+#dtab:hover{
+    background-color: white;
+    color: rgb(186, 19, 19);
+}
+.hidden{
+    display: none;
+}
+#canvas{
+    margin-top: 10px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px #00000053;
+    /* cursor: all-scroll; */
+}
+#no-of-queries{
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 4px;
+}
+#no-of-queries input{
+    height: 30px;
+    padding-left: 10px;
+    width: 103px;
+    margin: 0px 10px;
+}
+#no-of-queries span{
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+#no-of-queries button{
+    color:white;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 9px 14px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 10px;
+    /* background: linear-gradient(to right, #33ccff 0%, #ff66ff 100%); */
+    background-color: #8314dfd4;
+    box-shadow: 0px 0px 5px rgba(118, 115, 115, 0.507);
+    transition: 0.3s linear;
+}
+button#calculate{
+    margin-top: 5px;
+    margin-bottom: 16px;
+    padding: 10px 16px;
+    height: 40px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #8a2be2d6;
+    box-shadow: 0px 0px 5px #0000003d;
+    font-weight: 800;
+}
