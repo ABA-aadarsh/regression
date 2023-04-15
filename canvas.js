@@ -3,8 +3,8 @@ canvas.width=700
 canvas.height=500
 const c=canvas.getContext("2d")
 const axis={
-    x_position:canvas.width/2,
-    y_position:canvas.height/2,
+    x_position:100,
+    y_position:canvas.height-100,
     spacing:40,
     unitSize:5
 }
@@ -91,6 +91,9 @@ const plotAxis=()=>{
     setXaxis()
     // y-axis
     setYaxis()
+    // text
+    drawText(`1 unit in X-axis = ${axis.unitSize} units`,{x:canvas.width-180,y:20},"blue")
+    drawText(`1 unit in Y-axis = ${axis.unitSize} units`,{x:canvas.width-180,y:50},"blue")
 }
 const drawPoint=(position,radius,color)=>{
     c.beginPath()
@@ -125,4 +128,9 @@ const plotRegressionLine=({slope,constant})=>{
         "solid",
         2
     )
+}
+const drawText=(content,position,color="black",font="16px Arial")=>{
+    c.font=font
+    c.fillStyle=color
+    c.fillText(content,position.x,position.y)
 }
